@@ -1,0 +1,122 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+	font-family: Days One;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 23px;
+}
+
+.header {
+	position: fixed;
+	left: -1px;
+	top: -1px;
+	width: 101%;
+	margin: 0 auto;
+	height: 91px;
+	background: #ffffff;
+	border: 2px solid rgb(57, 139, 54);
+}
+
+.header__inner {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	padding-top: 25px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.logo {
+	width: 100%;
+	height: 42px;
+}
+
+.burger__icon {
+	display: none;
+}
+/* .burger__icon :active {
+	display: none;
+} */
+
+.search {
+	margin-right: 35px;
+	width: 17px;
+	height: 17px;
+}
+
+.burger {
+	width: 25px;
+	height: 25px;
+}
+.container {
+	width: 100%;
+	height: 100%;
+	max-width: 1240px;
+	margin: 0 auto;
+}
+
+.nav__link {
+	margin-right: 35px;
+	color: black;
+	text-decoration: none;
+}
+
+.nav__link:hover {
+	color: rgb(57, 139, 54);
+	transition: 0.4s;
+}
+
+.content {
+	justify-content: space-between;
+	flex-wrap: wrap;
+	display: flex;
+	max-width: 1240px;
+	width: 100%;
+	height: 100%;
+	padding: 91px 30px;
+	margin: 0 auto;
+}
+
+.content p {
+	padding: 10px;
+	max-width: 300px;
+	border-radius: 8px;
+}
+.content p:hover {
+	box-shadow: 0 0 10px black;
+	transition: 0.3s;
+}
+
+@media screen and (max-width: 777px) {
+	.burger__icon {
+		display: block;
+	}
+	.nav {
+		display: none;
+	}
+	.content p {
+		max-width: 70%;
+	}
+	.content {
+		justify-content: center;
+	}
+}
+.footer {
+	position: relative;
+	flex-wrap: wrap;
+	display: flex;
+	max-width: 1240px;
+	width: 100%;
+	height: 80px;
+
+	margin-top: 100px;
+}
