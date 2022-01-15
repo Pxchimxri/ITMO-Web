@@ -10,6 +10,9 @@
 		<title>Торговая площадка restock</title>
 		<script src="/src/scripts/script.js"></script>
 		<script src="/src/scripts/todo.js"></script>
+		<link href="./src/css/lab7.css" rel="stylesheet" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 	</head>
 	<body>
 		<header class="header">
@@ -43,6 +46,25 @@
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, possimus error nulla facilis non quis magni nesciunt
 				doloribus. Tempore quam nisi at saepe voluptas iste fugit a assumenda velit quibusdam?
 			</p>
+
+			<div class="swiper">
+				<!-- Additional required wrapper -->
+				<div class="swiper-wrapper">
+					<!-- Slides -->
+					<div class="swiper-slide"><img src="src/images/slider1.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="src/images/slider2.jpg" alt="" /></div>
+					<div class="swiper-slide"><img src="src/images/slider3.png" alt="" /></div>
+					...
+				</div>
+				<!-- If we need pagination -->
+
+				<!-- If we need navigation buttons -->
+				<div class="swiper-button-prev"></div>
+				<div class="swiper-button-next"></div>
+
+				<!-- If we need scrollbar -->
+			</div>
+			<script src="src/scripts/swiper.js"></script>
 			<footer class="footer">
 				<div id="load-time"></div>
 			</footer>
